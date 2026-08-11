@@ -34,6 +34,7 @@
     font-size: 16px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
 
   /* NAV */
@@ -53,7 +54,7 @@
   }
 
   .nav-inner {
-    max-width: 1100px;
+    max-width: 950px;
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -72,7 +73,7 @@
     display: inline-block;
     font-size: 11px;
     font-weight: 600;
-    background: var(--blue);
+    background: #8400b3;
     color: white;
     border-radius: 6px;
     padding: 3px 8px;
@@ -100,7 +101,7 @@
   }
 
   .hero-inner {
-    max-width: 1100px;
+    max-width: 950px;
     margin: 0 auto;
   }
 
@@ -129,7 +130,7 @@
 
   .headline {
     width: 100%;
-    font-size: clamp(3.4rem, 9vw, 6.5rem);
+    font-size: 5em;
     font-weight: 900;
     line-height: 0.98;
     letter-spacing: -0.03em;
@@ -178,7 +179,7 @@
   }
 
   .section-inner {
-    max-width: 1100px;
+    max-width: 950px;
     margin: 0 auto;
   }
 
@@ -202,10 +203,10 @@
 
   .section-sub {
     font-size: 17px;
-    color: var(--gray-500);
+    color: var(--ink);
     line-height: 1.65;
     margin-bottom: 3rem;
-    max-width: 520px;
+    max-width: 620px;
   }
 
   /* PROBLEM GRID */
@@ -399,6 +400,15 @@
     .hero { padding: 4.5rem 1.5rem 3.5rem; }
     section { padding: 3.5rem 1.5rem; }
     footer { padding: 1.5rem; }
+    .headline { font-size: 2.75em; }
+    .subhead { font-size: 18px; max-width: 100%; }
+    nav { height: auto; min-height: 60px; padding: 10px 1.25rem; flex-wrap: wrap; }
+    .price-row { flex-direction: column; align-items: flex-start; }
+  }
+
+  @media (max-width: 420px) {
+    .headline { font-size: 2.1em; }
+    .nav-badge { display: none; }
   }
 </style>
 </head>
@@ -414,8 +424,8 @@
 <div class="hero">
   <div class="hero-inner">
     <span class="tag">UX Rescue</span>
-    <h1 class="headline">AI built it.<br>But can anyone <span class="accent">use it?</span></h1>
-    <p class="subhead">AI can generate a product fast — but it doesn't know your users, your flow, or why someone would actually click that button. A one-hour UX session fixes the experience so your product works as well as it looks.</p>
+    <h1 class="headline">You built something real with AI. Now it needs to work for <span class="accent">real people.</span></h1>
+    <p class="subhead">I’ll spend an hour going through your product as a first-time user, finding the places where people get confused, stuck, or lose the thread. You’ll get a recording of the audit plus a short, prioritized list of fixes you can actually ship.</p>
     <div class="pills">
       <span class="pill"><i class="ti ti-clock"></i> 1-hour session</span>
       <span class="pill"><i class="ti ti-currency-dollar"></i> $100 for independent creators</span>
@@ -510,7 +520,7 @@
       <span class="logo-pill">Side Inc.</span>
       <span class="logo-pill">Habitat for Humanity</span>
     </div>
-    <p class="bio">Brynn Caputo is an experience designer based in Portland, OR. She's spent 20 years redesigning products across healthcare, fintech, real estate tech, and nonprofits — always focused on making complex systems feel simple and human to the people who actually have to use them.</p>
+    <p class="bio">Brynn Caputo is an experience designer based in Portland, OR. She's spent 20 years redesigning products across healthcare, fintech, real estate tech, and nonprofits.  Always focused on making complex systems feel simple and human to the people who actually have to use them.</p>
   </div>
 </section>
 
@@ -520,7 +530,7 @@
     <h2 class="section-heading">Book a 30 minute chat and we can see if your project is a good fit.</h2>
     <p class="booking-intro">Pick a time below. Bring your product, your users in mind, and your honest frustrations.</p>
     <!-- Calendly inline widget begin -->
-    <div class="calendly-inline-widget" data-url="https://calendly.com/brynndlebop/let-s-have-coffee" style="min-width:320px;height:700px;"></div>
+    <div class="calendly-inline-widget" data-url="https://calendly.com/brynndlebop/let-s-have-coffee" style="min-width:320px;height:840px;"></div>
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     <!-- Calendly inline widget end -->
   </div>
